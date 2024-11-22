@@ -1,27 +1,19 @@
-/* В этом файле вы импортируете все шрифты для сайта. Один из них вариативный и требует особенной настройки */
-@font-face {
-    font-display: swap;
-    font-family: 'Inter-Variable';
-    src: 
-        local('Inter-Variable'),
-        url("./Inter-Variable.woff2") format('woff2 supports variations'),
-        url("./Inter-Variable.woff2") format('woff2-variations');
-    font-weight: 400 785;
-    font-variation-settings: 'wght' 400; /* Устанавливаем стандартный вес */
-}
 
 @font-face {
-    font-family: 'PressStart2P-Regular';
-    src: url("./PressStart2P-Regular.woff") format('woff');
-    font-weight: normal;
+    font-family: 'Press Start 2P';
+    src:
+      local('Press Start 2P'),
+      url(./PressStart2P-Regular.woff) format('woff');
+    font-style: normal;
+    font-weight: 400;
     font-display: swap;
-}
-@supports ((-webkit-text-stroke: 1px black) or (text-stroke: 1px black)) {
-    .stroked-text {
-        font-family: 'Inter-Variable', sans-serif;
-        font-size: 2rem;
-        -webkit-text-stroke: 1px black; /* Для браузеров с префиксом */
-        text-stroke: 1px black; /* Для браузеров с поддержкой стандарта */
-        color: white; /* Цвет текста внутри обводки */
-    }
-}
+  }
+  @font-face {
+    font-family: 'Inter';
+    src:
+      local('Inter'),
+      url(./Inter-Variable.woff2) format('woff2 supports variations'),
+      url(./Inter-Variable.woff2) format('woff2-variations');
+    font-weight: 400 785;
+    font-display: swap;
+  }
